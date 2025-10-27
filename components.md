@@ -4,9 +4,84 @@ Detailed documentation for all Angular components in StackInsight Auth Lite.
 
 ## Component Categories
 
+- **Public Components** - Landing page and marketing content
 - **Auth Components** - Authentication and user management
 - **Dashboard Components** - Analytics and admin features
 - **Shared Components** - Reusable UI components
+
+---
+
+## Public Components
+
+### HomeComponent
+
+Public landing page showcasing authentication features and demo accounts.
+
+**Location:** `src/app/pages/home/`
+
+**Route:** `/` (root)
+
+**Features:**
+- Hero section with product branding
+- Demo account credentials display
+- Feature showcase grid
+- Tech stack badges
+- Placeholder pricing section
+- Placeholder testimonials section
+- Call-to-action buttons with router links
+- GitHub repository link
+- Responsive design with mobile-friendly layout
+
+**Component Structure:**
+```typescript
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, RouterLink],
+  templateUrl: './home.html',
+  styleUrls: ['./home.scss']
+})
+export class HomeComponent {
+  features: Feature[] = [
+    // Email/Password Login
+    // Email Verification
+    // Password Reset
+    // Profile Management
+    // Dashboard Analytics
+  ];
+
+  techStack: string[] = [
+    'Angular 20', 'Express.js', 'Prisma',
+    'PostgreSQL', 'JWT Authentication', 'SCSS'
+  ];
+
+  pricingPlans: PricingPlan[] = [
+    // Placeholder pricing tiers
+  ];
+
+  testimonials: Testimonial[] = [
+    // Placeholder testimonials
+  ];
+
+  demoFeatures: string[] = [
+    // Key feature highlights
+  ];
+}
+```
+
+**Key Sections:**
+- **Hero**: Product name, tagline, demo accounts (alice@example.com, bob@example.com)
+- **Features**: Grid of implemented authentication flows
+- **Tech Stack**: Technology badges
+- **Pricing**: Placeholder pricing table (customizable)
+- **Testimonials**: Example testimonials (customizable)
+- **CTA**: Links to login, register, and GitHub repository
+
+**Styling:**
+- Uses modern SCSS with `sass:color` module
+- Compact single-line property grouping per Lite Form SCSS style guide
+- Gradient backgrounds and card-based layouts
+- Responsive breakpoints for mobile devices
 
 ---
 

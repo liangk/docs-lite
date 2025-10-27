@@ -107,6 +107,7 @@ Complete list of features and capabilities in the StackInsight Auth Lite.
 - ✅ Password visibility toggle
 
 ### Pages & Routes
+- ✅ Landing page (HomeComponent) with demo accounts and feature showcase
 - ✅ Login page
 - ✅ Registration page
 - ✅ Dashboard page (protected)

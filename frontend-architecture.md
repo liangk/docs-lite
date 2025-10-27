@@ -136,13 +136,11 @@ Reusable components and services used across the app.
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login',
-    pathMatch: 'full'
+    component: HomeComponent
   },
   {
     path: 'login',
-    component: LoginComponent,
-    canActivate: [noAuthGuard]
+    component: LoginComponent
   },
   {
     path: 'register',
