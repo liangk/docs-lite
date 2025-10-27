@@ -37,18 +37,20 @@ This single command will:
 
 Once all services are running, access:
 
-- **Frontend**: [http://localhost:4205](http://localhost:4205)
+- **Frontend (Landing Page)**: [http://localhost:4205](http://localhost:4205)
 - **Backend API**: [http://localhost:4005](http://localhost:4005)
 - **MailDev (Email Viewer)**: [http://localhost:1080](http://localhost:1080)
 - **Database**: `localhost:5432`
 
 ### 4. Test the Application
 
-1. **Register a new account** at [http://localhost:4205/register](http://localhost:4205/register)
-2. **Check your email** in MailDev at [http://localhost:1080](http://localhost:1080)
-3. **Verify your account** by clicking the link in the email
-4. **Log in** at [http://localhost:4205/login](http://localhost:4205/login)
-5. **View the dashboard** at [http://localhost:4205/dashboard](http://localhost:4205/dashboard)
+1. **Visit the landing page** at [http://localhost:4205](http://localhost:4205) to see demo accounts and features
+2. **Try demo login** using the credentials shown on the landing page (alice@example.com / Password123!)
+3. **Or register a new account** at [http://localhost:4205/register](http://localhost:4205/register)
+4. **Check your email** in MailDev at [http://localhost:1080](http://localhost:1080)
+5. **Verify your account** by clicking the link in the email
+6. **Log in** at [http://localhost:4205/login](http://localhost:4205/login)
+7. **View the dashboard** at [http://localhost:4205/dashboard](http://localhost:4205/dashboard)
 
 ## Docker Helper Commands
 
