@@ -4,7 +4,7 @@ Detailed documentation for all Angular components in StackInsight Auth Lite.
 
 ## Component Categories
 
-- **Public Components** - Landing page and marketing content
+- **Public Components** - Landing page with features, pricing, and testimonials
 - **Auth Components** - Authentication and user management
 - **Dashboard Components** - Analytics and admin features
 - **Shared Components** - Reusable UI components

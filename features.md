@@ -2,6 +2,18 @@
 
 Complete list of features and capabilities in the StackInsight Auth Lite.
 
+## 🎯 Landing Page
+
+### Demo & Marketing
+- ✅ Modern, responsive landing page
+- ✅ Feature showcase with interactive grid
+- ✅ Demo account credentials display
+- ✅ Tech stack overview badges
+- ✅ Customizable pricing tables
+- ✅ Testimonial showcase section
+- ✅ Call-to-action sections
+- ✅ GitHub repository links
+
 ## 🔐 Authentication & Security
 
 ### User Registration
