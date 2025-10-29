@@ -1,67 +1,113 @@
-# Deployment Overview
+# Deployment Guide
 
-Strategies to deploy StackInsight Auth Lite to production.
+This guide covers deploying the application to production using Netlify (frontend) and Railway (backend).
 
-## Recommended Topologies
+## Frontend Deployment (Netlify)
 
-- **Separate Frontend + Backend** (recommended)
-  - Frontend: Static hosting (Railway, Vercel, Netlify) via nginx or platform CDN
-  - Backend: Node/Express on Railway/Render/Fly.io
-  - Database: Managed Postgres (Railway, Supabase, Neon, RDS)
+### Configuration Files
 
-- **Docker Compose (single host)**
-  - All services on a VM; production hardening required (TLS, backups, monitoring)
+Two key files handle routing and API proxying in production:
 
-## Prerequisites
+1. `frontend/netlify.toml`:
+```toml
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
-- Production `.env` for backend (see `deploy-environment.md`)
-- `environment.ts` points to production API origin over HTTPS
-- CORS configured to allow your frontend origin
-- SMTP configured with verified sender
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-backend.railway.app/api/:splat"
+  status = 200
+  force = true
+```
+
+2. `frontend/public/_redirects`:
+```
+/api/*  https://your-backend.railway.app/api/:splat  200
+/*      /index.html     200
+```
+
+### Environment Configuration
+
+The frontend uses relative API paths in production (`frontend/src/environments/environment.ts`):
+```typescript
+export const environment = {
+  production: true,
+  apiUrl: '/api'  // Use relative path for Netlify proxy
+};
+```
+
+### Critical Settings
+
+1. **API Proxying**: All `/api/*` requests are proxied to your Railway backend through Netlify.
+2. **SPA Routing**: Non-API routes fall back to `index.html` for Angular routing.
+3. **Build Output**: `_redirects` and `netlify.toml` must be included in the build output.
 
 ## Backend Deployment (Railway)
 
-1. Create a new service from the backend folder
-2. Set variables: `DATABASE_URL`, `JWT_*`, `FRONTEND_URL`, `SMTP_*`, `NODE_ENV=production`
-3. Set `PORT=4005` and expose it
-4. Add a managed Postgres service and connect with SSL
-5. Run migrations: `npx prisma migrate deploy`
+### Required Environment Variables
 
-## Frontend Deployment (Railway)
+- `NODE_ENV=production` - Enables secure cookie settings
+- `CORS_ORIGIN=https://your-frontend-domain.com` - Your Netlify domain
+- JWT secrets (see Environment Variables section in main README)
 
-1. Build Angular app in CI or Railway build
-2. Serve with nginx (Dockerfile already provided)
-3. Ensure nginx does not proxy `/api` (frontend talks directly to `environment.apiUrl`)
-4. Set `environment.ts` `apiUrl` to backend URL (HTTPS)
+### Cookie Security
 
-## Vercel Deployment (Frontend)
+In production:
+- `Secure: true` - Requires HTTPS
+- `SameSite: 'none'` - Allows cross-origin requests
+- `HttpOnly: true` - Prevents JavaScript access
 
-- Use `vercel.json` rewrites if you want Vercel to proxy to your backend
-- Otherwise set `environment.apiUrl` directly to backend origin
-- Build command: `npm run build`
-- Output: `dist/frontend`
+### CORS Configuration
 
-## Domains & TLS
+The backend allows credentials and specific origins:
+```typescript
+app.use(cors({
+  origin: process.env.CORS_ORIGIN,
+  credentials: true
+}));
+```
 
-- Use HTTPS for both frontend and backend
-- Configure custom domains and automatic TLS via platform
+## Common Issues
 
-## Health & Monitoring
+### Missing Cookies
 
-- Expose `/api/health` on backend
-- Set up log drains and alerts (error rate, restarts)
+If authentication cookies aren't sent on API requests:
+1. Verify `NODE_ENV=production` on Railway (enables proper cookie settings)
+2. Confirm frontend uses relative `/api` paths in production
+3. Check Netlify includes redirect rules in build
+4. Verify CORS_ORIGIN matches your Netlify domain exactly
 
-## Backups
+### CORS Errors
 
-- Enable automated Postgres backups
-- Test restore procedure
+If you see CORS errors:
+1. Check `CORS_ORIGIN` on Railway matches your Netlify domain
+2. Ensure credentials are enabled in both frontend and backend
+3. Verify cookies use `SameSite=None; Secure` in production
 
-## Post-Deploy Checklist
+### Cookie Domains
 
-- [ ] HTTPS enabled on both services
-- [ ] CORS allows only production frontend
-- [ ] Cookies are `Secure`, `HttpOnly`, `SameSite=strict`
-- [ ] SMTP verified and emails delivered
-- [ ] Admin user created (seed)
-- [ ] Error monitoring active
-- [ ] Rate limiting enabled
+- Cookies are automatically scoped to the Netlify domain when using the proxy
+- No explicit `Domain` attribute needed in cookie settings
+- All requests appear same-origin to the browser
+
+## Deployment Checklist
+
+1. Frontend (Netlify):
+   - [ ] Push code with `netlify.toml` and `_redirects`
+   - [ ] Verify build includes redirect rules
+   - [ ] Update API URL in environment.ts
+   - [ ] Deploy and verify routing works
+
+2. Backend (Railway):
+   - [ ] Set `NODE_ENV=production`
+   - [ ] Configure `CORS_ORIGIN` with Netlify domain
+   - [ ] Set all required JWT secrets
+   - [ ] Deploy and verify API responds
+
+3. Verify Integration:
+   - [ ] Test login flow end-to-end
+   - [ ] Confirm cookies are set and sent
+   - [ ] Check protected routes work
+   - [ ] Verify email verification flow
