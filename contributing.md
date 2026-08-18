@@ -90,7 +90,7 @@ When opening an issue, include:
 ## Security
 
 - Do not disclose vulnerabilities publicly
-- Report security issues to security@stackinsight.app
+- Report security issues to security@stackinsight.dev
 
 ## Release Process
 

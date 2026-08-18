@@ -225,7 +225,7 @@ export class LoadingService {
 // environment.ts
 export const environment = {
   production: true,
-  apiUrl: 'https://api.stackinsight.app/api'
+  apiUrl: 'https://api.stackinsight.dev/api'
 };
 ```
 

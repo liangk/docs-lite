@@ -15,7 +15,7 @@ SMTP_HOST=smtp.yourprovider.com
 SMTP_PORT=587
 SMTP_USER=apikey_or_username
 SMTP_PASSWORD=your_password
-SMTP_FROM=noreply@stackinsight.app
+SMTP_FROM=noreply@stackinsight.dev
 FRONTEND_URL=https://your-frontend-domain
 ```
 
