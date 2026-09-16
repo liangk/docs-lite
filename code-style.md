@@ -1,6 +1,6 @@
 # Code Style Guide
 
-Conventions for StackInsight Auth Lite codebases.
+Conventions for Fullstack Auth Boilerplate codebases.
 
 ## General Principles
 - Prefer readability over cleverness

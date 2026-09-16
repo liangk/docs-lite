@@ -1,6 +1,6 @@
 # Environment Variables (Production)
 
-Guidance for configuring production environment variables for StackInsight Auth Lite.
+Guidance for configuring production environment variables for Fullstack Auth Boilerplate.
 
 ## Backend (.env)
 
@@ -26,7 +26,7 @@ SMTP_HOST=smtp.yourprovider.com
 SMTP_PORT=587
 SMTP_USER=apikey_or_username
 SMTP_PASSWORD=your_password
-SMTP_FROM=noreply@stackinsight.app
+SMTP_FROM=noreply@stackinsight.dev
 
 # CORS
 CORS_ORIGINS=["https://your-frontend-domain"]

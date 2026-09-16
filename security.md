@@ -1,6 +1,6 @@
 # Security Best Practices
 
-Security measures implemented in StackInsight Auth Lite and best practices for maintaining a secure application.
+Security measures implemented in Fullstack Auth Boilerplate and best practices for maintaining a secure application.
 
 ## Authentication Security
 
@@ -226,8 +226,8 @@ await prisma.user.update({
 ```
 # DNS Records (Example)
 v=spf1 include:_spf.google.com ~all
-default._domainkey.stackinsight.app IN TXT "v=DKIM1; k=rsa; p=..."
-_dmarc.stackinsight.app IN TXT "v=DMARC1; p=quarantine; rua=mailto:..."
+default._domainkey.stackinsight.dev IN TXT "v=DKIM1; k=rsa; p=..."
+_dmarc.stackinsight.dev IN TXT "v=DMARC1; p=quarantine; rua=mailto:..."
 ```
 
 ## Database Security
@@ -388,7 +388,7 @@ logger.warn('Failed login attempt', {
 If you discover a security vulnerability:
 
 1. **Do not** open a public GitHub issue
-2. Email security@stackinsight.app
+2. Email hello@stackinsight.dev
 3. Include detailed description
 4. Provide steps to reproduce
 5. Wait for confirmation before disclosure

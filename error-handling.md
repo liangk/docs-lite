@@ -1,6 +1,6 @@
 # Error Handling
 
-Complete guide to API error responses and codes in StackInsight Auth Lite.
+Complete guide to API error responses and codes in Fullstack Auth Boilerplate.
 
 ## Error Response Format
 

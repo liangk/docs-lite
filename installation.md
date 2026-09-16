@@ -1,6 +1,6 @@
 # Installation
 
-Detailed installation instructions for StackInsight Auth Lite.
+Detailed installation instructions for Fullstack Auth Boilerplate.
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ SMTP_HOST=maildev
 SMTP_PORT=1025
 SMTP_USER=
 SMTP_PASSWORD=
-SMTP_FROM=noreply@stackinsight.app
+SMTP_FROM=noreply@stackinsight.dev
 
 # Application
 NODE_ENV=development
@@ -130,7 +130,7 @@ JWT_ACCESS_SECRET=your-super-secret-access-token-key-change-this
 JWT_REFRESH_SECRET=your-super-secret-refresh-token-key-change-this
 SMTP_HOST=localhost
 SMTP_PORT=1025
-SMTP_FROM=noreply@stackinsight.app
+SMTP_FROM=noreply@stackinsight.dev
 NODE_ENV=development
 PORT=4005
 FRONTEND_URL=http://localhost:4200

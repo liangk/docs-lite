@@ -1,6 +1,6 @@
 # Database Schema
 
-Prisma schema and data model for StackInsight Auth Lite.
+Prisma schema and data model for Fullstack Auth Boilerplate.
 
 ## Overview
 
@@ -86,10 +86,10 @@ Create an admin user on first run:
 ```ts
 // prisma/seed.ts
 const admin = await prisma.user.upsert({
-  where: { email: 'admin@stackinsight.app' },
+  where: { email: 'admin@stackinsight.dev' },
   update: {},
   create: {
-    email: 'admin@stackinsight.app',
+    email: 'admin@stackinsight.dev',
     password: await bcrypt.hash('ChangeMe123', 10),
     role: 'ADMIN',
     isVerified: true

@@ -1,6 +1,6 @@
 # Frontend Architecture
 
-Comprehensive guide to the Angular frontend architecture in StackInsight Auth Lite.
+Comprehensive guide to the Angular frontend architecture in Fullstack Auth Boilerplate.
 
 ## Tech Stack
 
@@ -230,7 +230,7 @@ export class LoadingService {
 // environment.ts
 export const environment = {
   production: true,
-  apiUrl: 'https://api.stackinsight.app/api'
+  apiUrl: 'https://your-backend-domain/api'
 };
 ```
 

@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-Common issues and their solutions for the StackInsight Auth Lite.
+Common issues and their solutions for Fullstack Auth Boilerplate.
 
 ## Table of Contents
 

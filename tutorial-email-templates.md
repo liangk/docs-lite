@@ -1,6 +1,6 @@
 # Tutorial: Custom Email Templates
 
-Customize verification and password reset emails in StackInsight Auth Lite.
+Customize verification and password reset emails in Fullstack Auth Boilerplate.
 
 ## Email Types
 
@@ -43,7 +43,7 @@ function renderTemplate(name: string, data: any) {
   <body style="font-family: Arial, sans-serif;">
     <h2>Verify your email</h2>
     <p>Hi {{name}},</p>
-    <p>Thanks for signing up for <strong>StackInsight Auth Lite</strong>. Please verify your email by clicking the button below:</p>
+    <p>Thanks for signing up. Please verify your email by clicking the button below:</p>
     <p>
       <a href="{{verifyUrl}}" style="background:#2563eb;color:#fff;padding:10px 16px;text-decoration:none;border-radius:6px;">
         Verify Email
@@ -51,7 +51,7 @@ function renderTemplate(name: string, data: any) {
     </p>
     <p>This link will expire in 24 hours. If you did not create this account, you can ignore this email.</p>
     <hr/>
-    <p style="color:#888;">&copy; {{year}} StackInsight</p>
+    <p style="color:#888;">&copy; {{year}} Your Company</p>
   </body>
 </html>
 ```

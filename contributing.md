@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to StackInsight Auth Lite! This guide explains how to propose changes, report issues, and submit pull requests.
+Thanks for your interest in contributing to Fullstack Auth Boilerplate! This guide explains how to propose changes, report issues, and submit pull requests.
 
 ## Code of Conduct
 
@@ -90,7 +90,7 @@ When opening an issue, include:
 ## Security
 
 - Do not disclose vulnerabilities publicly
-- Report security issues to security@stackinsight.app
+- Report security issues to security@stackinsight.dev
 
 ## Release Process
 
@@ -107,4 +107,4 @@ When opening an issue, include:
 
 ## Thank You
 
-Your contributions help make StackInsight Auth Lite better for everyone.
+Your contributions help make Fullstack Auth Boilerplate better for everyone.

@@ -1,6 +1,6 @@
 # Custom Authentication Strategies
 
-Extend StackInsight Auth Lite with OAuth, 2FA, and custom providers.
+Extend Fullstack Auth Boilerplate with OAuth, 2FA, and custom providers.
 
 ## OAuth (Social Login)
 

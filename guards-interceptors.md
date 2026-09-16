@@ -1,6 +1,6 @@
 # Guards & Interceptors
 
-Complete guide to route guards and HTTP interceptors in StackInsight Auth Lite.
+Complete guide to route guards and HTTP interceptors in Fullstack Auth Boilerplate.
 
 ## Route Guards
 

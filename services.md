@@ -1,6 +1,6 @@
 # Services Guide
 
-Complete documentation for all Angular services in StackInsight Auth Lite.
+Complete documentation for all Angular services in Fullstack Auth Boilerplate.
 
 ## Service Categories
 

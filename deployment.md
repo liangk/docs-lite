@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide covers deploying the application to production using Netlify (frontend) and Railway (backend).
+Strategies to deploy Fullstack Auth Boilerplate to production.
 
 ## Frontend Deployment (Netlify)
 

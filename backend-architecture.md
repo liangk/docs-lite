@@ -1,6 +1,6 @@
 # Backend Architecture
 
-Overview of the Express.js backend for StackInsight Auth Lite.
+Overview of the Express.js backend for Fullstack Auth Boilerplate.
 
 ## Tech Stack
 

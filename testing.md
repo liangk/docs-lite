@@ -1,6 +1,6 @@
 # Testing Guide
 
-Testing strategy for StackInsight Auth Lite.
+Testing strategy for Fullstack Auth Boilerplate.
 
 ## Types of Tests
 - **Unit Tests**: Functions, services, controllers

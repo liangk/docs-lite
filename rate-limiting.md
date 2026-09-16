@@ -1,6 +1,6 @@
 # API Rate Limiting
 
-Configure and operate rate limiting in StackInsight Auth Lite.
+Configure and operate rate limiting in Fullstack Auth Boilerplate.
 
 ## Goals
 

@@ -1,6 +1,6 @@
 # Middleware
 
-Custom and third-party middleware used in the StackInsight Auth Lite backend.
+Custom and third-party middleware used in the Fullstack Auth Boilerplate backend.
 
 ## Core Middleware
 

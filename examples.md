@@ -1,6 +1,6 @@
 # Example Use Cases
 
-Practical implementation patterns with StackInsight Auth Lite.
+Practical implementation patterns with Fullstack Auth Boilerplate.
 
 ## 1) Protecting a Page (Angular)
 

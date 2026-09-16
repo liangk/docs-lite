@@ -1,6 +1,6 @@
 # Tutorial: Adding a New Feature
 
-Step-by-step guide to add a simple "Profile Bio" feature to StackInsight Auth Lite.
+Step-by-step guide to add a simple "Profile Bio" feature to Fullstack Auth Boilerplate.
 
 ## Goal
 

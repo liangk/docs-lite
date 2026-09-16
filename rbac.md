@@ -1,6 +1,6 @@
 # Role-Based Access Control (RBAC)
 
-Implementing roles and permissions in StackInsight Auth Lite.
+Implementing roles and permissions in Fullstack Auth Boilerplate.
 
 ## Concepts
 
