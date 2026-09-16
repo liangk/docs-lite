@@ -18,6 +18,11 @@ Comprehensive guide to the Angular frontend architecture in Fullstack Auth Boile
 frontend/
 ├── src/
 │   ├── app/
+│   │   ├── pages/                   # Page-level components
+│   │   │   ├── home/               # Landing page
+│   │   │   │   ├── home.ts
+│   │   │   │   ├── home.html
+│   │   │   │   └── home.scss
 │   │   ├── auth/                    # Authentication module
 │   │   │   ├── components/
 │   │   │   │   ├── login/
