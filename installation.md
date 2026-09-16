@@ -1,6 +1,6 @@
 # Installation
 
-Detailed installation instructions for StackInsight Auth Lite.
+Detailed installation instructions for Fullstack Auth Boilerplate.
 
 ## Prerequisites
 

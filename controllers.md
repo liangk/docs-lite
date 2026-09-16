@@ -1,6 +1,6 @@
 # Controllers
 
-HTTP controllers for the Express backend in StackInsight Auth Lite.
+HTTP controllers for the Express backend in Fullstack Auth Boilerplate.
 
 ## Philosophy
 

@@ -1,6 +1,6 @@
 # API Reference
 
-Complete reference for all API endpoints in the StackInsight Auth Lite.
+Complete reference for all API endpoints in Fullstack Auth Boilerplate.
 
 ## Base URL
 

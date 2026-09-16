@@ -1,16 +1,17 @@
 # Changelog
 
-All notable changes to StackInsight Auth Lite will be documented in this file.
+All notable changes to Fullstack Auth Boilerplate will be documented in this file.
 
 The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
 
 ## [Unreleased]
 - Documentation refinements
 - Performance improvements
+- Renamed the project to Fullstack Auth Boilerplate and removed the retired hosted demo links
 
 ## [1.0.0] - 2025-10-23
 ### Added
-- Initial release of StackInsight Auth Lite
+- Initial release
 - Secure auth: HTTP-only cookies, refresh token rotation, email verification
 - Auth flows: register, login, logout, refresh, verify email, reset password
 - Admin dashboard: stats, trends, activity log (API)
@@ -18,9 +19,6 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 - Docker Compose for full dev stack (db, backend, frontend, maildev)
 - CI workflows (Frontend/Backend) and environment scaffolding
 - Comprehensive documentation site (Astro) with guides and API refs
-
-### Changed
-- Rebranded from "Fullstack Auth Boilerplate" to "StackInsight Auth Lite"
 
 ### Security
 - Helmet headers and CORS policies for production

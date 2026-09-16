@@ -1,6 +1,6 @@
 # Deployment Overview
 
-Strategies to deploy StackInsight Auth Lite to production.
+Strategies to deploy Fullstack Auth Boilerplate to production.
 
 ## Recommended Topologies
 

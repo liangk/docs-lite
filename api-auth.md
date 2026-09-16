@@ -1,6 +1,6 @@
 # Authentication API Endpoints
 
-Complete reference for all authentication-related API endpoints in StackInsight Auth Lite.
+Complete reference for all authentication-related API endpoints in Fullstack Auth Boilerplate.
 
 ## Base URL
 

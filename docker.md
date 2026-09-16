@@ -1,6 +1,6 @@
 # Docker Guide
 
-Run StackInsight Auth Lite with Docker and Docker Compose.
+Run Fullstack Auth Boilerplate with Docker and Docker Compose.
 
 ## Services
 

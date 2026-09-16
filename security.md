@@ -1,6 +1,6 @@
 # Security Best Practices
 
-Security measures implemented in StackInsight Auth Lite and best practices for maintaining a secure application.
+Security measures implemented in Fullstack Auth Boilerplate and best practices for maintaining a secure application.
 
 ## Authentication Security
 

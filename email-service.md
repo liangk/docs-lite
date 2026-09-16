@@ -1,6 +1,6 @@
 # Email Service
 
-Email setup and templates for StackInsight Auth Lite.
+Email setup and templates for Fullstack Auth Boilerplate.
 
 ## Overview
 

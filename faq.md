@@ -1,10 +1,10 @@
 # FAQ
 
-Frequently asked questions about StackInsight Auth Lite.
+Frequently asked questions about Fullstack Auth Boilerplate.
 
 ## General
 
-### What is StackInsight Auth Lite?
+### What is Fullstack Auth Boilerplate?
 A production-ready authentication starter using Angular + Express + PostgreSQL with secure, cookie-based auth.
 
 ### Who is it for?

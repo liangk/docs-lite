@@ -1,6 +1,6 @@
 # Database Schema
 
-Prisma schema and data model for StackInsight Auth Lite.
+Prisma schema and data model for Fullstack Auth Boilerplate.
 
 ## Overview
 

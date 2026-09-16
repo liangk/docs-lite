@@ -1,6 +1,6 @@
 # Monitoring & Logging
 
-Set up monitoring, logging, and observability for StackInsight Auth Lite deployments.
+Set up monitoring, logging, and observability for Fullstack Auth Boilerplate deployments.
 
 ## What to Monitor
 

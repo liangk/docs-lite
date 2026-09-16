@@ -1,6 +1,6 @@
 # Components Guide
 
-Detailed documentation for all Angular components in StackInsight Auth Lite.
+Detailed documentation for all Angular components in Fullstack Auth Boilerplate.
 
 ## Component Categories
 
@@ -548,7 +548,7 @@ Application header with navigation.
     <mat-icon>menu</mat-icon>
   </button>
 
-  <span class="logo">StackInsight Auth Lite</span>
+  <span class="logo">Fullstack Auth Boilerplate</span>
 
   <span class="spacer"></span>
 

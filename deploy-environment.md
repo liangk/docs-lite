@@ -1,6 +1,6 @@
 # Environment Variables (Production)
 
-Guidance for configuring production environment variables for StackInsight Auth Lite.
+Guidance for configuring production environment variables for Fullstack Auth Boilerplate.
 
 ## Backend (.env)
 

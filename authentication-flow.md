@@ -1,6 +1,6 @@
 # Authentication Flow
 
-Complete guide to understanding authentication in the StackInsight Auth Lite.
+Complete guide to understanding authentication in Fullstack Auth Boilerplate.
 
 ## Overview
 

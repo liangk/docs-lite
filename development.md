@@ -1,6 +1,6 @@
 # Development Guide
 
-Local development workflow for StackInsight Auth Lite.
+Local development workflow for Fullstack Auth Boilerplate.
 
 ## Prerequisites
 - Node.js 18+

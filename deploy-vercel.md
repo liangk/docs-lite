@@ -1,6 +1,6 @@
 # Vercel Deployment (Frontend)
 
-Deploy the Angular frontend of StackInsight Auth Lite to Vercel.
+Deploy the Angular frontend of Fullstack Auth Boilerplate to Vercel.
 
 ## Overview
 
