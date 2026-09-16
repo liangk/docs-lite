@@ -31,7 +31,7 @@ No parameters required
 
 ```json
 {
-  "totalUsers": 1234,
+  "totalUsers": 2234,
   "verifiedUsers": 1100,
   "unverifiedUsers": 134,
   "newUsersToday": 45,
